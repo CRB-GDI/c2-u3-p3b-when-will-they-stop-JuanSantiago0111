@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -33,8 +34,18 @@ namespace ProgrammingAssignment2
 				// and the comment below. You can of
 				// course add more space between the
 				// comments as needed
-
-
+				decimal currInt;
+				currInt = GetValue();
+				decimal count = 0; 
+				decimal sum = 0;
+				decimal mean = 0; 
+				while (currInt != -1)
+				{
+					count++;
+					sum = sum + currInt;
+					currInt = GetValue();
+				}
+				currInt = GetValue();
 
 				// Don't add or modify any code below
 				// this comment
